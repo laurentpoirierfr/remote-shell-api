@@ -1,0 +1,19 @@
+---
+application:
+  name: "remote-shell-api"
+  version: "0.0.1"
+  port: "8080"
+
+shell:
+  folder: "/tmp/remote-shell-api"
+  id_entry_point: "/tmp/remote-shell-api/delivery-config/products"
+
+api:
+  console_path: "/api/console/"
+  command_path: "/api/v1/commands/"
+  init_path: "/api/v1/init"
+
+git:
+  url: "https://gitlab.com/groupeima/socle/configuration/build/delivery-config.git"
+  target: "/tmp/remote-shell-api/delivery-config"
+  branch: "master"
